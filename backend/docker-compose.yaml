@@ -1,0 +1,9 @@
+version: '3'
+services:
+  db:
+    image: postgres:latest
+    container_name: db_teste
+    environment:
+      POSTGRES_PASSWORD: "qualquercoisa*"
+      POSTGRES_DB: "db_teste"
+    ports: ["5432:5432"]
